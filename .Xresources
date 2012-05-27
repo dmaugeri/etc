@@ -1,0 +1,32 @@
+term*loginShell:true
+aterm*saveLines:32767
+aterm*backround:Black
+aterm*foreground:#3333CC
+aterm*font:-*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+aterm*transparent:true
+aterm*scrollBar:false
+aterm*shading:35
+
+!General
+urxvt*loginShell:true
+urxvt*scrollBar:false
+urxvt*secondaryScroll:true
+urxvt*saveLines:65535
+urxvt*urgentOnBell:true
+urxvt*cursorBlink:true       
+!urxvt*override-redirect:false
+!urxvt*borderLess:false
+!urxvt*internalBorder:0
+!urxvt*externalBorder:0
+
+!Appearance
+urxvt*font:-*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+urxvt*cursorColor:#DCDCCC
+!urxvt*shading:50 lower for lighter wallpapers
+urxvt*shading: 35
+!urxvt*transparent:true
+
+
+!Theme
+urxvt*foreground:White
+urxvt*background:Black
