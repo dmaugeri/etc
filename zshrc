@@ -19,15 +19,14 @@ unsetopt HUP
 
 # use vi editing mode
 bindkey -v
-
 # display current vi-mode in prompt string
 VI_MODE="i"
 function zle-line-init zle-keymap-select {
     VI_MODE="${${KEYMAP/vicmd/c}/(main|viins)/i}"
     if [ $VI_MODE = "i" ]; then
-        PROMPT="%n@%m:%1~ [%{$fg[red]%}${VI_MODE}%{$reset_color%}]$ "
+        PROMPT="%{$fg[magenta]%}%n%{$fg[cyan]%}@%{$fg[yellow]%}%m%{$reset_color%}:%1~ [%{$fg[red]%}${VI_MODE}%{$reset_color%}]$ "
     else
-        PROMPT="%n@%m:%1~ [%{$fg[green]%}${VI_MODE}%{$reset_color%}]$ "
+        PROMPT="%{$fg[magenta]%}%n%{$fg[cyan]%}@%{$fg[yellow]%}%m%{$reset_color%}:%1~ [%{$fg[green]%}${VI_MODE}%{$reset_color%}]$ "
     fi
     zle reset-prompt
 }
@@ -35,7 +34,7 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 
-PROMPT="%n@%m:%1~ [%{$fg[red]%}${VI_MODE}%{$reset_color%}]$ "
+PROMPT="%{$fg[magenta]%}%n%{$fg[cyan]%}@%{$fg[yellow]%}%m%{$reset_color%}:%1~ [%{$fg[red]%}${VI_MODE}%{$reset_color%}]$ "
 
 # enable backwards search
 bindkey '^R' history-incremental-search-backward
@@ -47,10 +46,9 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=* r:|=
 zstyle :compinstall filename '/home/sam/.zshrc'
 
 autoload -Uz compinit && compinit
-
+#PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
 # enable zsh colours
 autoload -U colors && colors
-
 # enable colour support of ls and add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -82,3 +80,4 @@ alias dm="sudo lsof | grep 'DEL.*lib' | cut -d ' ' -f 1 | sort -u"
 if [ -x /usr/bin/wmname ]; then
     wmname LG3D 2> /dev/null
 fi
+
