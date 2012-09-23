@@ -24,9 +24,9 @@ VI_MODE="i"
 function zle-line-init zle-keymap-select {
     VI_MODE="${${KEYMAP/vicmd/c}/(main|viins)/i}"
     if [ $VI_MODE = "i" ]; then
-        PROMPT="%{$fg[magenta]%}%n%{$fg[cyan]%}@%{$fg[yellow]%}%m%{$reset_color%}:%1~ [%{$fg[red]%}${VI_MODE}%{$reset_color%}]$ "
+        PROMPT="%{$fg[magenta]%}%n%{$fg[yellow]%}@%{$fg[cyan]%}%m%{$reset_color%}:%1~ [%{$fg[red]%}${VI_MODE}%{$reset_color%}]$ "
     else
-        PROMPT="%{$fg[magenta]%}%n%{$fg[cyan]%}@%{$fg[yellow]%}%m%{$reset_color%}:%1~ [%{$fg[green]%}${VI_MODE}%{$reset_color%}]$ "
+        PROMPT="%{$fg[magenta]%}%n%{$fg[yellow]%}@%{$fg[cyan]%}%m%{$reset_color%}:%1~ [%{$fg[green]%}${VI_MODE}%{$reset_color%}]$ "
     fi
     zle reset-prompt
 }
@@ -34,7 +34,7 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 
-PROMPT="%{$fg[magenta]%}%n%{$fg[cyan]%}@%{$fg[yellow]%}%m%{$reset_color%}:%1~ [%{$fg[red]%}${VI_MODE}%{$reset_color%}]$ "
+PROMPT="%{$fg[magenta]%}%n%{$fg[yellow]%}@%{$fg[cyan]%}%m%{$reset_color%}:%1~ [%{$fg[red]%}${VI_MODE}%{$reset_color%}]$ "
 
 # enable backwards search
 bindkey '^R' history-incremental-search-backward
