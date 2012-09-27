@@ -232,9 +232,9 @@ globalkeys = awful.util.table.join(
     awful.key({                   }, "Print",  function () awful.util.spawn("scrot -e 'mv $f ~/Pictures/ 2> /dev/null'") end),
 
     -- Volume
-    awful.key({ modkey, "Shift"   }, "Up",     function () awful.util.spawn("amixer -q sset Master 2dB+") end),
-    awful.key({ modkey, "Shift"   }, "Down",   function () awful.util.spawn("amixer -q sset Master 2dB-") end),
-    awful.key({ modkey, "Shift"   }, "Left",   function () awful.util.spawn("amixer -q sset Master toggle") end),
+    awful.key({ modkey, "Shift"   }, "Up",     function () awful.util.spawn("amixer -c 0 set Master 2dB+ umute", false) end),
+    awful.key({ modkey, "Shift"   }, "Down",   function () awful.util.spawn("amixer -c 0 set Master 2dB-", false) end),
+    awful.key({ modkey, "Shift"   }, "Left",   function () awful.util.spawn("amixer -q sset Master toggle", false) end),
 	--LockMousePad
 	awful.key({modkey, "Shift"    }, "F3",     function () awful.util.spawn("locktouchpad")end)
 				                          
