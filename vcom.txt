@@ -3,10 +3,10 @@
 gi - see something that needs to be deleted press escape go delete
      press gi goes back to where you were last in insert mode.
 
-df" - delete's forward up to string inclusive (same line)
-dF" - delete's backwards up to string inclusive (same line)
-dt" - delete's forward's up to string exclusive (same line)
-dT" - delete's backward's up to string exclusive (same line)
+df" - delete's forward up to string or character inclusive (same line)
+dF" - delete's backwards up to string or character inclusive (same line)
+dt" - delete's forward's up to string or character exclusive (same line)
+dT" - delete's backward's up to string or character exclusive (same line)
 
 d/string - delete's up to first occurence of string exclusive
 d?string - delete's backwards to first occurence of string exclusive
