@@ -21,6 +21,7 @@ unsetopt HUP
 bindkey -v
 # display current vi-mode in prompt string
 VI_MODE="i"
+
 function zle-line-init zle-keymap-select {
     VI_MODE="${${KEYMAP/vicmd/c}/(main|viins)/i}"
     if [ $VI_MODE = "i" ]; then
