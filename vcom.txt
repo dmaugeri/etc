@@ -7,6 +7,8 @@ df" - delete's forward up to string or character inclusive (same line)
 dF" - delete's backwards up to string or character inclusive (same line)
 dt" - delete's forward's up to string or character exclusive (same line)
 dT" - delete's backward's up to string or character exclusive (same line)
+0dw - delete's all whitespace before a word
+V(some high number)< - ^ same as above
 
 d/string - delete's up to first occurence of string exclusive
 d?string - delete's backwards to first occurence of string exclusive
