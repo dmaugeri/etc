@@ -112,4 +112,4 @@ nnoremap <Leader>sh :ConqueTerm bash<CR>
 nnoremap <Leader>m :MRU<CR>
 
 " maps ,h to toggle highlighting after you search something
-nnoremap <Leader>h :hlsearch! hlsearch?<CR>
+nnoremap <Leader>h :set hlsearch! hlsearch?<CR>
