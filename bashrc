@@ -34,6 +34,11 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
+if [ "$TERM" = "rxvt-unicode-256color" -a ! -e /usr/share/terminfo/r/rxvt-unicode-256color ]; then
+    TERM=rxvt-256color
+elif [ "$TERM" = "xterm" -a -e /lib/terminfo/x/xterm-256color ]; then
+    TERM=xterm-256color
+fi
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color) color_prompt=yes;;
