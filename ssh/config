@@ -1,0 +1,2 @@
+# avoid delay when connecting to servers where enabled
+GSSAPIAuthentication no
