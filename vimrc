@@ -74,6 +74,7 @@ nnoremap <C-l> <C-w>l
 
 " --filetype detection
 filetype plugin indent on   " let vim detect filetype and load appropriate scripts
+runtime macros/matchit.vim  " able to jump tag using % sign
 
 " --character encoding
 set encoding=utf-8                             " encoding used within vim
