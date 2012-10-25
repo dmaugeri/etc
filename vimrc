@@ -58,11 +58,6 @@ if has("gui_running")
     " place gVim settings here (instead of in .gvimrc)
 endif
 
-" force 256 colours (required for xterm and screen-bce $TERMs)
-if &term == "xterm" || &term == "screen-bce"
-    set t_Co=256
-endif
-
 " --navigation
 set scrolloff=5 " scrolling starts 5 lines before window border
 

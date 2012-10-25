@@ -22,6 +22,13 @@ bindkey -v
 # display current vi-mode in prompt string
 VI_MODE="i"
 bindkey -M viins 'jk' vi-cmd-mode
+#enable 256 color support
+if [ "$TERM" = "rxvt-unicode-256color" -a ! -e /usr/share/terminfo/r/rxvt-unicode-256color ]; then
+        TERM=rxvt-256color
+elif [ "$TERM" = "xterm" -a -e /lib/terminfo/x/xterm-256color ]; then
+        TERM=xterm-256color
+fi
+
 function zle-line-init zle-keymap-select {
     VI_MODE="${${KEYMAP/vicmd/c}/(main|viins)/i}"
     if [ $VI_MODE = "i" ]; then
