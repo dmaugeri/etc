@@ -1,9 +1,15 @@
+snippet Sys
+	System.out.println("${1:}");
 snippet main
 	public class ${1:`Filename()`}{
 		public static void main (String [] args)
 		{
 			${1:/* code */}
 		}
+	}
+snippet cla
+	public class ${1: `Filename()`}{
+
 	}
 snippet pu
 	public
