@@ -3,4 +3,8 @@ let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/media/documents/Documents/c-programming/cps305Testing/trie'
 let g:netrw_dirhist_2='/media/documents/Documents/sam-conf/etc/link.sh'
 let g:netrw_dirhist_3='/home/daniel/git-projects/compile4u'
+<<<<<<< HEAD
 let g:netrw_dirhist_4='/home/daniel/git-projects/data-structures'
+=======
+let g:netrw_dirhist_4='/home/daniel/etc/link.sh'
+>>>>>>> 03b2a96195d02d18245168decd5abadc0a9c495d

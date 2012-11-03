@@ -106,6 +106,7 @@ let g:NERDChristmasTree = 1
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>sh :ConqueTerm bash<CR>
 nnoremap <Leader>m :MRU<CR>
-
+"makes ,a to toggle between header file and regular file in C and C++
+nnoremap <Leader>a :A<CR>
 " maps ,h to toggle highlighting after you search something
 nnoremap <Leader>h :set hlsearch! hlsearch?<CR>

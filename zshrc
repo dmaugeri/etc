@@ -17,6 +17,8 @@ unsetopt BEEP
 unsetopt CHECK_JOBS
 unsetopt HUP
 
+#make local::lib is active
+eval $(perl -I${HOME}/perl15/lib/perl15 -Mlocal::lib)
 # use vi editing mode
 bindkey -v
 # display current vi-mode in prompt string
