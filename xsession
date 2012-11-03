@@ -11,6 +11,6 @@ redshift -l 43.7:-79.3 &
 #required for qtconfig to load gtk themes
 export GKT2_RC_FILES="/home/daniel/.gtkrc-2.0"
 
-exec awesome #executes awesome WM
+exec awesome -c ~/.config/awesome/rc.lua #executes awesome WM
 #exec ~/Documents/sam-conf/etc/dwm/dwm
 #gconftool-2 --type bool --set /apps/nautilus/preferences/show_desktop false #Sets nautilus desktop to false
