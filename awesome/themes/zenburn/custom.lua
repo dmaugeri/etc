@@ -16,11 +16,17 @@ theme.font      = "terminus 9"
 --theme.font      = "sans 8"
 
 -- {{{ Colors
+-- tag font colour
 theme.fg_normal = "#DCDCCC"
+-- main and title of window font colour
 theme.fg_focus  = "#F0DFAF"
+-- the colour of the text when theres a notification (skype msg)
 theme.fg_urgent = "#CC9393"
+-- background colour of the tags that aren't focused or have notification
 theme.bg_normal = "#3F3F3F"
+-- background colour of the tag in focus
 theme.bg_focus  = "#1E2320"
+-- background colour of the tag with notification
 theme.bg_urgent = "#3F3F3F"
 -- }}}
 
