@@ -12,7 +12,7 @@ require("debian.menu")
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/home/daniel/.config/awesome/themes/zenburn/theme.lua")
+beautiful.init("/home/daniel/.config/awesome/themes/zenburn/custom.lua")
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
 editor = os.getenv("EDITOR") or "editor"
