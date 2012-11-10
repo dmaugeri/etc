@@ -2,7 +2,7 @@
 call pathogen#runtime_append_all_bundles()  
 set nocompatible    " enabled when (g)vimrc is found
 " easier to reach than \
-let mapleader = ","
+let mapleader = " "
 " easier to reach than Esc or Ctrl-[
 inoremap jk <Esc>
 
