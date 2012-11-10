@@ -50,7 +50,7 @@ set wildmenu       " enhanced command-line completion
 
 " --visual theme and appearance
 " preferred colorscheme
-colorscheme neverland-darker 
+colorscheme neverland-darker
 " makes vim somewhat transparent"
 "hi Normal ctermbg=none
 
