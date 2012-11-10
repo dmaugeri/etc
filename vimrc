@@ -110,3 +110,13 @@ nnoremap <Leader>m :MRU<CR>
 nnoremap <Leader>a :A<CR>
 " maps ,h to toggle highlighting after you search something
 nnoremap <Leader>h :set hlsearch! hlsearch?<CR>
+" disables arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
