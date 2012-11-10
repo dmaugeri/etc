@@ -110,3 +110,21 @@ nnoremap <Leader>m :MRU<CR>
 nnoremap <Leader>a :A<CR>
 " maps ,h to toggle highlighting after you search something
 nnoremap <Leader>h :set hlsearch! hlsearch?<CR>
+
+" function to toggle absolute and relative line numbers
+function! NumberToggle()
+    if(&relativenumber == 1)
+        set number
+    else
+        set relativenumber
+    endif
+endfunc
+
+nnoremap <leader>z :call NumberToggle()<CR>
+:au FocusLost * :set number
+:au FocusGained * :set relativenumber
+"use absolute line numbers when in insert mode
+autocmd InsertEnter * :set number
+"use relative line numbers when leaving insert mode 
+autocmd InsertLeave * :set relativenumber
+
