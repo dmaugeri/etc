@@ -20,6 +20,7 @@ set ruler        " always show current position
 set showcmd      " show the command being typed
 set showmode     " show current mode (insert, visual, etc.)
 set laststatus=2 " always show status line
+set nowrap
 
 " --searching
 set ignorecase " ignore case when searching
