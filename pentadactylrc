@@ -7,6 +7,6 @@ set runtimepath=/home/daniel/.pentadactyl
 :map <A-Left> <C-o>
 :map <A-Right> <C-i>
 :map <F2> :toolbartoggle Navigation Toolbar<CR>
-:map <C-j> gt
-:map <C-k> gT
+:map <C-k> gt
+:map <C-j> gT
 :set hintkeys="asdfghjkl;"
