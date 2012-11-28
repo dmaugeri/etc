@@ -1,0 +1,12 @@
+"1.0b3 (created: 2010/11/06 12:31:35)
+
+set guioptions=rbCmTB
+set runtimepath=/home/daniel/.pentadactyl
+
+" vim: set ft=pentadactyl:
+:map <A-Left> <C-o>
+:map <A-Right> <C-i>
+:map <F2> :toolbartoggle Navigation Toolbar<CR>
+:map <C-j> gt
+:map <C-k> gT
+:set hintkeys="asdfghjkl;"
