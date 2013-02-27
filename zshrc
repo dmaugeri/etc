@@ -89,3 +89,7 @@ if [ -x /usr/bin/wmname ]; then
     wmname LG3D 2> /dev/null
 fi
 
+# make zsh's 'time' output similar to bash's
+TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
