@@ -79,6 +79,7 @@ alias cls='clear'
 alias fm='ranger'
 alias g='git'
 alias tm='tmux'
+alias urandom='cat /dev/urandom | base64 | grep -i -m 1 --color'
 
 # list processes which are using a deleted map file after a system update and need to be restarted
 alias dm="sudo lsof | grep 'DEL.*lib' | cut -d ' ' -f 1 | sort -u"
