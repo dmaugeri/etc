@@ -1,7 +1,7 @@
 #!/bin/bash
 wmname LG3D #makes jvm believe i am running a different windows manager
 #gnome-settings-daemon & #handles themes starts gnome-screensaver
-urxvt &; fortune | cowsay #opens urxvt in backround to make it run faster
+urxvt & #opens urxvt in backround to make it run faster
 #nm-applet & #for network manager
 #gnome-power-manager & #power manager for netbook
 #wicd-curses
