@@ -94,3 +94,5 @@ fi
 TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+fortune | cowsay
