@@ -95,4 +95,8 @@ TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-fortune -a | cowsay
+if [ -e ~/.asciiart ]; then
+    floyd=$(<~/.asciiart)
+    echo $floyd | toilet -f term --gay
+    fortune -sa -n 140 | cowsay | toilet -f term --metal
+fi
