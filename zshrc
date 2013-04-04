@@ -94,6 +94,8 @@ fi
 TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:/opt/android-sdk-linux/platform-tools/
+PATH=$PATH:/opt/android-sdk-linux/tools/
 
 if [ -e ~/.asciiart ]; then
     floyd=$(<~/.asciiart)

@@ -46,8 +46,8 @@ layouts =
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {
-  names  = { "main", "www", "misc", "code", "im", "word", "media", "urxvt"},
-  layout = { layouts[3], layouts[4], layouts[2], layouts[1], layouts[10], layouts[10], layouts[4], layouts[9]}
+  names  = { "main", "www", "im", "code", "misc", "word", "media", "urxvt"},
+  layout = { layouts[3], layouts[2], layouts[2], layouts[1], layouts[3], layouts[10], layouts[4], layouts[9]}
 }
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
@@ -331,10 +331,12 @@ awful.rules.rules = {
     { rule = { class = "Transmission" },
       properties = { tag = tags[1][7] } },
     { rule = { class = "Emesene" },
-      properties = { tag = tags[1][5] } },
+      properties = { tag = tags[1][3] } },
     { rule = { class = "Skype" },
-      properties = { tag = tags[1][5] } },
+      properties = { tag = tags[1][3] } },
     { rule = { class = "OpenOffice" },
+      properties = { tag = tags[1][6] } },
+    { rule = { class = "LibreOffice" },
       properties = { tag = tags[1][6] } },
     { rule = { class = "urxvt" },
       callback = function(c) c:tags({tags[1][1], tags[1][8]}) end },

@@ -8,7 +8,7 @@
 
 -- {{{ Main
 theme = {}
-theme.wallpaper_cmd = { "awsetbg -f /home/daniel/etc/awesome/themes/zenburn/gorillaz.jpg" }
+theme.wallpaper_cmd = { "awsetbg -f /media/data/wallpapers/rainbow-spaceman.jpg" }
 -- }}}
 
 -- {{{ Styles

@@ -1,11 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/media/documents/Documents/c-programming/cps305Testing/trie'
-let g:netrw_dirhist_2='/media/documents/Documents/sam-conf/etc/link.sh'
-let g:netrw_dirhist_3='/home/daniel/git-projects/compile4u'
-let g:netrw_dirhist_4='/home/daniel/etc/link.sh'
-let g:netrw_dirhist_5='/home/daniel/git-projects/cps706project/src/ClientConsole.java'
-let g:netrw_dirhist_6='/media/data/Theory of Parsing'
-let g:netrw_dirhist_7='/home/daniel/Documents/graph_tests/bfs-undirected'
-let g:netrw_dirhist_8='/home/daniel/test'
-let g:netrw_dirhist_9='/home/daniel/tmp'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/daniel/test'
+let g:netrw_dirhist_2='/home/daniel/tmp'
+let g:netrw_dirhist_3='/home/daniel/test'
