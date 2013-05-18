@@ -8,7 +8,7 @@
 
 -- {{{ Main
 theme = {}
-theme.wallpaper_cmd = { "awsetbg -f /media/data/wallpapers/rainbow-spaceman.jpg" }
+theme.wallpaper_cmd = { "awsetbg -f /media/data/wallpapers/streetlight-gray.jpg" }
 -- }}}
 
 -- {{{ Styles

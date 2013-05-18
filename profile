@@ -30,3 +30,7 @@ fi
 if [ "$(hostname)" == "newton" ]; then
     PATH="/opt/android-sdk-linux/tools"
 fi
+
+if [ -d "$HOME/bin/idea/bin" ] ; then
+    PATH="$HOME/bin/idea/bin:$PATH"
+fi
