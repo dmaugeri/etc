@@ -93,9 +93,15 @@ fi
 # make zsh's 'time' output similar to bash's
 TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
 
+PATH=$PATH:$HOME/bin/
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:/opt/android-sdk-linux/platform-tools/
 PATH=$PATH:/opt/android-sdk-linux/tools/
+PATH=$HOME/local/bin/:$PATH
+PATH=$HOME/bin/bin:$PATH
+PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin/
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 if [ -e ~/.asciiart ]; then
     floyd=$(<~/.asciiart)

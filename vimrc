@@ -1,6 +1,21 @@
 " prevent vim from emulating vi
-call pathogen#runtime_append_all_bundles()  
 set nocompatible    " enabled when (g)vimrc is found
+" -- configure vundle and load plugins {
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"add all plugins here"
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tomasr/molokai'
+
+call vundle#end()
+filetype plugin indent on
+"}
+filetype on
+
 " easier to reach than \
 let mapleader = " "
 " easier to reach than Esc or Ctrl-[
@@ -51,7 +66,7 @@ set wildmenu       " enhanced command-line completion
 
 " --visual theme and appearance
 " preferred colorscheme
-colorscheme neverland-darker
+colorscheme molokai
 " makes vim somewhat transparent"
 "hi Normal ctermbg=none
 
@@ -111,13 +126,3 @@ nnoremap <Leader>m :MRU<CR>
 nnoremap <Leader>a :A<CR>
 " maps ,h to toggle highlighting after you search something
 nnoremap <Leader>h :set hlsearch! hlsearch?<CR>
-" disables arrow keys
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
