@@ -10,6 +10,13 @@ call vundle#begin()
 "add all plugins here"
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tomasr/molokai'
+Plugin 'msanders/snipmate.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'godlygeek/tabular'
+Plugin 'takac/vim-hardtime'
+Plugin 'chazmcgarvey/vimcoder'
 
 call vundle#end()
 filetype plugin indent on
@@ -100,8 +107,11 @@ set fileformats=unix,dos,mac " try recognizing line endings in this order
 set tabstop=4                " width of a tab character in spaces
 set softtabstop=4            " defines number of spaces for when adding/removing tabs
 set shiftwidth=4             " number of spaces to use for autoindent
-set expandtab                " use spaces instead of tab characters; to insert real tab, use <C-v><Tab>
 set cindent                  " automatic indenting; see ':h C-indenting' for comparison
+set expandtab                " use spaces instead of tab characters; to insert real tab, use <C-v><Tab>
+
+" --code folding
+set foldmethod=manual       "can create code folds using v{motion}zf
 
 " --copying / pasting
 " allow vim commands to copy to system clipboard (*)
@@ -116,8 +126,14 @@ nnoremap <Leader>p :set paste! paste?<CR>
 "set pastetoggle=<Leader>p
 
 " --custom settings
+" -- settings for indent-guides
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+let g:indent_guides_enable_on_vim_startup = 1
+
 let g:acp_behaviorSnipmateLength = 1 
 let g:NERDChristmasTree = 1
+let g:hardtime_default_on = 1
 
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>sh :ConqueTerm bash<CR>
