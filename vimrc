@@ -4,7 +4,7 @@ set nocompatible    " enabled when (g)vimrc is found
 filetype off
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/vimfiles/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 "add all plugins here"
