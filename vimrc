@@ -15,10 +15,12 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'godlygeek/tabular'
-Plugin 'takac/vim-hardtime'
-Plugin 'VimCoder.jar'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'trapd00r/neverland-vim-theme'
+"Plugin 'takac/vim-hardtime'
+Plugin 'chazmcgarvey/vimcoder'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
+"Plugin 'elzr/vim-json'
 
 call vundle#end()
 filetype plugin indent on
@@ -92,6 +94,22 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" auto-expand path to parent of current file; for windows, (v)splits, and tabs
+nnoremap <Leader>ew :edit <C-R>=expand("%:p:h") . "/" <CR>
+nnoremap <Leader>es :split <C-R>=expand("%:p:h") . "/" <CR>
+nnoremap <Leader>ev :vsplit <C-R>=expand("%:p:h") . "/" <CR>
+nnoremap <Leader>et :tabedit <C-R>=expand("%:p:h") . "/" <CR>
+
+" window split shortcuts
+nnoremap <Leader>swh :topleft vnew<CR>
+nnoremap <Leader>swl :botright vnew<CR>
+nnoremap <Leader>swk :topleft new<CR>
+nnoremap <Leader>swj :botright new<CR>
+nnoremap <Leader>sh :leftabove vnew<CR>
+nnoremap <Leader>sl :rightbelow vnew<CR>
+nnoremap <Leader>sk :leftabove new<CR>
+nnoremap <Leader>sj :rightbelow new<CR>
+
 " --filetype detection
 filetype plugin indent on   " let vim detect filetype and load appropriate scripts
 runtime macros/matchit.vim  " able to jump tag using % sign
@@ -133,14 +151,31 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
 
+let g:ctrlp_use_caching=0
+
+let g:ctrlp_custom_ignore = {
+	\ 'dir':  '\v[\/]\.(git|hg|svn)$',
+	\ 'file': '\v\.(exe|so|dll)$',
+	\ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
+	\ }
+
 let g:acp_behaviorSnipmateLength = 1 
 let g:NERDChristmasTree = 1
 let g:hardtime_default_on = 1
 
+function! PrettifyXML()
+	set ft=xml
+	:%s/></>\r</g
+	:0
+	:norm =G
+endfunction
+
 nnoremap <Leader>n :NERDTreeToggle<CR>
-nnoremap <Leader>sh :ConqueTerm bash<CR>
-nnoremap <Leader>m :MRU<CR>
-"makes ,a to toggle between header file and regular file in C and C++
-nnoremap <Leader>a :A<CR>
 " maps ,h to toggle highlighting after you search something
 nnoremap <Leader>h :set hlsearch! hlsearch?<CR>
+nnoremap <Leader>ls :ls<CR>:buffer<Space>
+nnoremap <Leader>evi :e $MYVIMRC<CR>
+nnoremap <F5> :source $MYVIMRC<CR>
+nnoremap <Leader>a :Ack<Space>
+nnoremap <c-p> :CtrlP<CR>
+nnoremap <Leader>did :g/"id"/normal! V%d<CR>ggV%y
