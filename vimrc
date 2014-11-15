@@ -16,7 +16,9 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'godlygeek/tabular'
 Plugin 'takac/vim-hardtime'
-Plugin 'chazmcgarvey/vimcoder'
+Plugin 'VimCoder.jar'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'trapd00r/neverland-vim-theme'
 
 call vundle#end()
 filetype plugin indent on
