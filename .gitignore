@@ -1,4 +1,5 @@
 *.swp
 *.netrw*
 .*
+vim/bundle/*
 *.swo
