@@ -20,6 +20,7 @@ Plugin 'chazmcgarvey/vimcoder'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'tommcdo/vim-exchange'
 "Plugin 'elzr/vim-json'
 
 call vundle#end()
