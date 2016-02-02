@@ -1,12 +1,3 @@
-term*loginShell:true
-aterm*saveLines:32767
-aterm*backround:Black
-aterm*foreground:#3333CC
-aterm*font:-*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
-aterm*transparent:true
-aterm*scrollBar:false
-aterm*shading:35
-
 !General
 urxvt*loginShell:true
 urxvt*scrollBar:false

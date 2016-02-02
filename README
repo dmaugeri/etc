@@ -5,3 +5,13 @@ git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/Vundle.vim
 inside vim run :PluginInstall
 
 To get the same terminal install urxvt-256color
+
+To add widgets to your awesome window manager
+git clone http://git.sysphere.org/vicious ~/.config/awesome/
+
+copy default themes and create a custom themes inside your
+awesome config location
+cp -r /usr/local/share/awesome/themes ~/.config/awesome/
+
+By default the rc.lua file will look for a theme
+called themes/custom/theme.lua
