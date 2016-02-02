@@ -3,3 +3,5 @@ To install the vimrc
 create a ~/.vim/bundle/
 git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/Vundle.vim
 inside vim run :PluginInstall
+
+To get the same terminal install urxvt-256color
