@@ -49,6 +49,7 @@ set showcmd      " show the command being typed
 set showmode     " show current mode (insert, visual, etc.)
 set laststatus=2 " always show status line
 set nowrap
+set statusline=%{fugitive#statusline()} "set status line to show git branch
 
 " --searching
 set ignorecase " ignore case when searching
