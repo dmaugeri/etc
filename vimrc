@@ -16,9 +16,10 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-vinegar'
 "Plugin 'takac/vim-hardtime'
 Plugin 'chazmcgarvey/vimcoder'
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'tommcdo/vim-exchange'
@@ -173,7 +174,7 @@ function! PrettifyXML()
 	:norm =G
 endfunction
 
-nnoremap <Leader>n :NERDTreeToggle<CR>
+"nnoremap <Leader>n :NERDTreeToggle<CR>
 " maps ,h to toggle highlighting after you search something
 nnoremap <Leader>h :set hlsearch! hlsearch?<CR>
 nnoremap <Leader>ls :ls<CR>:buffer<Space>
