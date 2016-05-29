@@ -19,34 +19,46 @@ urxvt*cursorColor:#DCDCCC
 urxvt*shading: 35
 !urxvt*transparent:true
 
-
-!Theme
-urxvt*foreground:White
-urxvt*background:Black
-
 /* pattern matching */
 URxvt*perl-ext-common: default,matcher
 URxvt*urlLauncher:     firefox
 URxvt*matcher.button:  1
 
-!Theme
-*background: #1A1A1A
-*foreground: #DDCCBB
+#define base00 #151515
+#define base01 #202020
+#define base02 #303030
+#define base03 #505050
+#define base04 #b0b0b0
+#define base05 #d0d0d0
+#define base06 #e0e0e0
+#define base07 #f5f5f5
+#define base08 #fb9fb1
+#define base09 #eda987
+#define base0A #ddb26f
+#define base0B #acc267
+#define base0C #12cfc0
+#define base0D #6fc2ef
+#define base0E #e1a3ee
+#define base0F #deaf8f
 
-*color0: #393939
-*color1: #C72D41
-*color2: #85C600
-*color3: #FFA600
-*color4: #3465A4
-!*color4: #2A61A7
-*color5: #931645
-*color6: #0099BC
-*color7: #D9D2BD
-*color8: #2E3537
-*color9: #FF5D4A
-*color10: #B3FF1D
-*color11: #FEED6C
-*color12: #3C91D2
-*color13: #BE4773
-*color14: #5CDEDE
-*color15: #85919B
+*.foreground:   base05
+*.background:   base00
+*.cursorColor:  base05
+
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+
+*.color8:       base03
+*.color9:       base08
+*.color10:      base06
+*.color11:      base0A
+*.color12:      base0D
+*.color13:      base0E
+*.color14:      base0C
+*.color15:      base07
