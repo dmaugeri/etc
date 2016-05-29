@@ -24,6 +24,15 @@ URxvt*perl-ext-common: default,matcher
 URxvt*urlLauncher:     firefox
 URxvt*matcher.button:  1
 
+! black     = color 0 and color 8
+! red       = color 1 and color 9
+! green     = color 2 and color 10
+! yellow    = color 3 and color 11
+! blue      = color 4 and color 12
+! magenta   = color 5 and color 13
+! cyan      = color 6 and color 14
+! white     = color 7 and color 15
+
 #define base00 #151515
 #define base01 #202020
 #define base02 #303030
