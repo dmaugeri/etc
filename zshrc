@@ -51,7 +51,6 @@ bindkey '^R' history-incremental-search-backward
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' expand prefix
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=* r:|=*'
-zstyle :compinstall filename '/home/sam/.zshrc'
 
 autoload -Uz compinit && compinit
 #PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
@@ -100,7 +99,6 @@ PATH=$PATH:/opt/android-sdk-linux/tools/
 PATH=$HOME/local/bin/:$PATH
 PATH=$HOME/bin/bin:$PATH
 PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin/
-PATH=/usr/local/heroku/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
