@@ -41,7 +41,7 @@ URxvt*matcher.button:  1
 #define base05 #d0d0d0
 #define base06 #e0e0e0
 #define base07 #f5f5f5
-#define base08 #fb9fb1
+#define base08 #ff8282
 #define base09 #eda987
 #define base0A #ddb26f
 #define base0B #acc267
