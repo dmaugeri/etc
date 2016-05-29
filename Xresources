@@ -12,7 +12,8 @@ urxvt*cursorBlink:true
 
 !Appearance
 !urxvt*font:-*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
-urxvt*font:xft:Inconsolata:bold:pixelsize=12
+urxvt*font:xft:Inconsolata:bold:pixelsize=13
+urxvt*letterSpace:-1
 urxvt*cursorColor:#DCDCCC
 !urxvt*shading:50 lower for lighter wallpapers
 urxvt*shading: 35
