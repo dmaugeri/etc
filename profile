@@ -34,3 +34,5 @@ fi
 if [ -d "$HOME/bin/idea/bin" ] ; then
     PATH="$HOME/bin/idea/bin:$PATH"
 fi
+
+

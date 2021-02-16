@@ -17,6 +17,10 @@ unsetopt BEEP
 unsetopt CHECK_JOBS
 unsetopt HUP
 
+if [[ -f "$HOME/.shellrc" ]]; then
+    source "$HOME/.shellrc"
+fi
+
 # use vi editing mode
 bindkey -v
 # display current vi-mode in prompt string
@@ -53,35 +57,9 @@ zstyle ':completion:*' expand prefix
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=* r:|=*'
 
 autoload -Uz compinit && compinit
-#PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
 # enable zsh colours
 autoload -U colors && colors
-# enable colour support of ls and add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
 
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
-# aliases
-alias ll='ls -l'
-alias lh='ls -lh'
-alias la='ls -A'
-alias llha='ls -lhA'
-alias l='ls -CF'
-alias cls='clear'
-alias fm='ranger'
-alias g='git'
-alias tm='tmux'
-alias urandom='cat /dev/urandom | base64 | grep -i -m 1 --color'
-
-# list processes which are using a deleted map file after a system update and need to be restarted
-alias dm="sudo lsof | grep 'DEL.*lib' | cut -d ' ' -f 1 | sort -u"
 
 # allows java graphical programs to run in tiling window managers by impersonating
 # a window manager in JVM's list of allowed non-re-parenting window managers
@@ -91,14 +69,6 @@ fi
 
 # make zsh's 'time' output similar to bash's
 TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
-
-PATH=$PATH:$HOME/bin/
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:/opt/android-sdk-linux/platform-tools/
-PATH=$PATH:/opt/android-sdk-linux/tools/
-PATH=$HOME/local/bin/:$PATH
-PATH=$HOME/bin/bin:$PATH
-PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin/
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
