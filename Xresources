@@ -71,3 +71,10 @@ URxvt*matcher.button:  1
 *.color13:      base0E
 *.color14:      base0C
 *.color15:      base07
+
+/* --- XTerm --- */
+XTerm*termName: xterm-256color
+
+XTerm*font:       xft:SF Mono:style=Bold:size=11
+XTerm*boldFont:   xft:SF Mono:style=Bold:size=11
+XTerm*italicFont: xft:SF Mono:style=Bold:size=11

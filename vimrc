@@ -143,6 +143,7 @@ set foldmethod=manual       "can create code folds using v{motion}zf
 "   + is the clipboard register (Ctrl-{c,v})
 "   * is the selection register (middle click, Shift-Insert)
 set clipboard=unnamed
+set clipboard=unnamedplus
 
 " set paste to prevent unexpected code formatting when pasting text
 " toggle paste and show current value ('pastetoggle' doesn't)
