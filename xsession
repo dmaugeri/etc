@@ -1,6 +1,6 @@
 #!/bin/bash
 
-xrdb -merge ~/.Xresources & # load X resource preferences
+xrdb -load ~/.Xresources & # load X resource preferences
 pasystray &
 nm-applet & #for network manager
 if [[ -f $HOME/.screenlayout/$HOSTNAME-screenlayout.sh ]]; then

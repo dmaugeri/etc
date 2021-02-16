@@ -5,26 +5,10 @@ urxvt*secondaryScroll:true
 urxvt*saveLines:65535
 urxvt*urgentOnBell:true
 urxvt*cursorBlink:true       
-/*
- * urxvt*override-redirect:false
- * urxvt*borderLess:false
- * urxvt*internalBorder:0
- * urxvt*externalBorder:0
-*/
-/* Appearance */
-/*
- * urxvt*font:-*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
- * */
 urxvt*font:xft:Inconsolata:bold:pixelsize=13.5
 urxvt*letterSpace:-1
 urxvt*cursorColor:#DCDCCC
-/*
- * urxvt*shading:50 lower for lighter wallpapers
- * */
 urxvt*shading: 35
-/*
- * urxvt*transparent:true
- * */
 
 /* pattern matching */
 URxvt*perl-ext-common: default,matcher
