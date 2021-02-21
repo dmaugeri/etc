@@ -23,6 +23,7 @@ Plugin 'chazmcgarvey/vimcoder'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'tommcdo/vim-exchange'
+Plugin 'rust-lang/rust.vim'
 "Plugin 'elzr/vim-json'
 
 call vundle#end()
