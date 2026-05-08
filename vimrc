@@ -138,14 +138,6 @@ set expandtab                " use spaces instead of tab characters; to insert r
 " --code folding
 set foldmethod=manual       "can create code folds using v{motion}zf
 
-" --copying / pasting
-" allow vim commands to copy to system clipboard (*)
-" for X11:
-"   + is the clipboard register (Ctrl-{c,v})
-"   * is the selection register (middle click, Shift-Insert)
-set clipboard=unnamed
-set clipboard=unnamedplus
-
 " set paste to prevent unexpected code formatting when pasting text
 " toggle paste and show current value ('pastetoggle' doesn't)
 nnoremap <Leader>p :set paste! paste?<CR>
